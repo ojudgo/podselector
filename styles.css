@@ -1,0 +1,87 @@
+* {brder: 1px solid black}
+
+:root {--pod-green: #006600;
+--pod-grey: #404040;
+--utility-orange: #ff8d03}
+
+body {background: grey}
+
+#hangar {
+max-width: 880px;
+margin: 0 auto}
+
+#garage {padding: 5px;}
+
+.pod-bay {background: silver;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pod {padding: 5px;
+display: inline-block;
+text-align: center;}
+
+.pod-outer {
+  background: var(--pod-green);
+  color: white;
+  width: 125px;
+  height: 100px;
+  border-radius: 100px 100px 50px 50px;
+  border: 1px solid black
+}
+
+.pod-inner {border: 1px solid var(--pod-green);
+  height: 150px;
+  width: 105px;
+  border-radius: 10px 10px 50px 50px;
+  background: var(--pod-grey);
+  margin: 5px 5px 0 5px;
+  padding: 5px
+}  
+
+.pod-vehicle {
+  width: 95px;
+  padding: 7px 3px;
+  background: var(--utility-orange);
+  font-family: arial;
+  color: white;
+  font-size: 0.6em;
+  border: 1px solid var(--pod-grey);
+  display: inline-block;
+  text-align: center;
+  margin: 2px;
+  cursor: pointer
+}
+
+.pod-door {margin-top: 25px;
+width: 75px;
+height: 60px;
+background-color: var(--pod-green);
+color: white;
+font-size: 30pt;
+font-weight: bold;
+border: 1px solid grey;
+cursor: pointer}
+  
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: #006600;
+  color: white;
+  font-family: sans-serif
+}
+
+.message-bar {max-height: 20px;
+background: black;
+color: white;
+padding-left: 2px}
+
+/*
+div {width: 100vw;
+height: 10vh;
+border: solid 1px green}
+*/
